@@ -95,17 +95,7 @@ Call
 <script>
 function myFunction(){
 var phone_select = document.getElementById('phone_input').value;
-if(phone_select == ""){
-document.getElementById('d').innerHTML = 'The field can not be empty';
-}
-else if(isNaN(phone_select)){
-document.getElementById('d').innerHTML = "String and other symbols are not allowed";
-}
-
-}    
-    else{
 window.location.href = 'tel:' + phone_select;
-}
 }
 </script>
 

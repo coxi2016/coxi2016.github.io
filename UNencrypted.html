@@ -2,6 +2,8 @@
 <html>
 <link href='https://fonts.googleapis.com/css?family=Glory' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Londrina Shadow' rel='stylesheet'>
+
+
 <style>
 body {
   background-image: url('https://i.ibb.co/HXhDCQD/mint-green-abstract-watercolor-background-textured-paper-168892-1033.jpg'); font-family: 'Glory';font-size: 22px;');
@@ -10,6 +12,8 @@ body {
         border-top: 7px double #000000;
       }
 </style>
+
+
 <body>
 
 <h1 style="text-align:center; font-size:60px; font-family: 'Londrina Shadow'"> GREEN FLAG ACTIONS </h1>
@@ -78,6 +82,33 @@ body {
 
 
 </ul> <br>
+        
+<h2>6. CONTACT NUMBERS</h2>
+<em>You can call a number here for support. But this is for targeted support, not just because you are lonely. </em><br>
+
+<input type="text" id="phone_input" maxlength="12">
+<button onclick="myFunction()">
+Call
+</button>
+<p id="d">
+</p>
+<script>
+function myFunction(){
+var phone_select = document.getElementById('phone_input').value;
+if(phone_select == ""){
+document.getElementById('d').innerHTML = 'The field can not be empty';
+}
+else if(isNaN(phone_select)){
+document.getElementById('d').innerHTML = "String and other symbols are not allowed";
+}
+
+}    
+    else{
+window.location.href = 'tel:' + phone_select;
+}
+}
+</script>
+
 
     </div>
 </div>
